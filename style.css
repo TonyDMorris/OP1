@@ -1,0 +1,145 @@
+.body {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav-bar main";
+  background-color: #202020;
+}
+
+#main-doc {
+  color: rgb(189, 189, 189);
+  font-family: "Roboto";
+  background-color: #202020;
+  grid-area: main;
+}
+
+.main-section {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-areas: "main-header";
+}
+
+.main-header {
+  border-radius: 5px;
+  border-style: solid;
+  background-color: #202020;
+  text-align: center;
+  padding: 2%;
+  grid-area: main-header;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr;
+  grid-template-areas: "op-1 portable header-img section-title";
+}
+
+@media (max-width: 800px) {
+  .main-header {
+    display: none;
+  }
+}
+
+.op-1 {
+  grid-area: op-1;
+}
+
+.op-1 h1 {
+  line-height: 15;
+  font-weight: 100;
+  font-size: 50%;
+  display: inline-block;
+  transform: scale(6, 20);
+}
+
+.portable {
+  grid-area: portable;
+}
+
+.header-img {
+  grid-area: header-img;
+}
+
+.header-img-img {
+  width: 250px;
+}
+
+.section-title {
+  grid-area: section-title;
+}
+
+.content {
+  text-align: left;
+  padding: 7%;
+  color: rgb(189, 189, 189);
+  font-family: "Roboto";
+  display: grid;
+
+  grid-column-gap: 4%;
+}
+
+#braille {
+  display: inline-block;
+  float: right;
+}
+
+.side-list {
+  height: 200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+#navbar {
+  height: 80vh;
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-area: nav-bar;
+  position: fixed;
+  background-color: #202020;
+  left: 10px;
+  grid-row-gap: 5px;
+  font-size: 2vw;
+}
+
+#navbar header {
+  text-align: center;
+  border-style: solid;
+
+  padding-top: 50%;
+  padding-bottom: 50%;
+  color: rgb(189, 189, 189);
+  font-size: 6vw;
+  background-color: #202020;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.nav-link {
+  border-style: solid;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: none;
+  color: rgb(189, 189, 189);
+  background-color: #202020;
+  border-radius: 5px;
+}
+
+.nav-link:link {
+}
+
+.nav-link:visited{
+ 
+}
+
+.nav-link:hover {
+  background-color: white;
+  color: #202020;
+}
+
+.nav-link:active {
+  background-color: white;
+  color: black;
+}
+
+
+
