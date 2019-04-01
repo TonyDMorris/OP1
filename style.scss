@@ -1,27 +1,20 @@
 .body {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 4fr;
   grid-template-columns: 1fr 4fr;
-  -ms-grid-rows: auto;
   grid-template-rows: auto;
   grid-template-areas: "nav-bar main";
   background-color: #202020;
 }
 
 #main-doc {
-  color: #bdbdbd;
+  color: rgb(189, 189, 189);
   font-family: "Roboto";
   background-color: #202020;
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: main;
 }
 
 .main-section {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto;
   grid-template-rows: auto;
   grid-template-areas: "main-header";
 }
@@ -32,12 +25,8 @@
   background-color: #202020;
   text-align: center;
   padding: 2%;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: main-header;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 2fr 2fr 2fr;
   grid-template-columns: 1fr 2fr 2fr 2fr;
   grid-template-areas: "op-1 portable header-img section-title";
 }
@@ -49,8 +38,6 @@
 }
 
 .op-1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: op-1;
 }
 
@@ -59,19 +46,14 @@
   font-weight: 100;
   font-size: 50%;
   display: inline-block;
-  -webkit-transform: scale(6, 20);
   transform: scale(6, 20);
 }
 
 .portable {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
   grid-area: portable;
 }
 
 .header-img {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
   grid-area: header-img;
 }
 
@@ -80,18 +62,16 @@
 }
 
 .section-title {
-  -ms-grid-row: 1;
-  -ms-grid-column: 4;
   grid-area: section-title;
 }
 
 .content {
   text-align: left;
   padding: 7%;
-  color: #bdbdbd;
+  color: rgb(189, 189, 189);
   font-family: "Roboto";
-  display: -ms-grid;
   display: grid;
+
   grid-column-gap: 4%;
 }
 
@@ -102,20 +82,14 @@
 
 .side-list {
   height: 200px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 #navbar {
   height: 80vh;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
   grid-area: nav-bar;
   position: fixed;
   background-color: #202020;
@@ -127,9 +101,10 @@
 #navbar header {
   text-align: center;
   border-style: solid;
+
   padding-top: 50%;
   padding-bottom: 50%;
-  color: #bdbdbd;
+  color: rgb(189, 189, 189);
   font-size: 6vw;
   background-color: #202020;
   border-radius: 5px;
@@ -144,9 +119,15 @@
   padding-left: 5px;
   padding-right: 5px;
   text-decoration: none;
-  color: #bdbdbd;
+  color: rgb(189, 189, 189);
   background-color: #202020;
   border-radius: 5px;
+}
+
+.nav-link:link {
+}
+
+.nav-link:visited {
 }
 
 .nav-link:hover {
@@ -158,4 +139,3 @@
   background-color: white;
   color: black;
 }
-/*# sourceMappingURL=style.css.map */
